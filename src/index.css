@@ -12,7 +12,17 @@
   --ternary-color-1: #a4a3a3;
   --ternary-color-2: #747474;
   --main-color: #4D77FF;
+
+  --opacity-primary: 1;
+  --opacity-secondary: 0.5;
 }
+.opa-dark {
+  opacity: var(--opacity-primary);
+}
+.opa-light {
+  opacity: var(--opacity-secondary);
+}
+
 .txt-main {
   color: var(--main-color);
 }
@@ -41,10 +51,12 @@
 
 .dark-theme {
   --secondary-color: #ffffff;
-  --primary-color: #000000;
+  --primary-color: #161616;
   --ternary-color-2: #a4a3a3;
   --ternary-color-1: #747474;
   --main-color: #4D77FF;
+  --opacity-secondary: 0.1;
+  --opacity-primary: 0.6;
 }
 
 body {
