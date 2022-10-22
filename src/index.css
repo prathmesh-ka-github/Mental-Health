@@ -2,10 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /*--primary-color: #ffffff;*/
+  /*--secondary-color: #000000;*/
+  /*--main-color: #4D77FF;*/
+  /*--ternary-color: #787878;*/
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --ternary-color-1: #a4a3a3;
+  --ternary-color-2: #747474;
+  --main-color: #4D77FF;
+}
+.txt-main {
+  color: var(--main-color);
+}
+.back-main {
+  background-color: var(--main-color);
+}
+.back-dark {
+  background-color: var(--secondary-color);
+}
+.txt-dark {
+  color: var(--primary-color);
+}
+.back-light {
+  background-color: var(--primary-color);
+}
+.txt-light {
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+.txt-ternary-dark {
+  color: var(--ternary-color-1);
+}
+.txt-ternary-light {
+  color: var(--ternary-color-2);
+}
+
+.dark-theme {
+  --secondary-color: #ffffff;
+  --primary-color: #000000;
+  --ternary-color-2: #a4a3a3;
+  --ternary-color-1: #747474;
+  --main-color: #4D77FF;
+}
+
 body {
   margin: 0;
 }
-
 .gradient__blue {
   background: linear-gradient(90deg, #b9c9ff 0%, #96afff 100%);
   filter: blur(120px);
@@ -13,4 +57,38 @@ body {
 .gradient__pink {
   background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
   filter: blur(140px);
+}
+.svg {
+  fill: var(--secondary-color);
+}
+.type {
+  position: relative;
+}
+.type::before, .type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.type::before {
+  background:var(--primary-color);
+  animation: typerwriter 2.5s steps(15) forwards;
+}
+.type::after{
+  width: 0.125em;
+  background: var(--main-color);
+  animation: typerwriter 2.5s steps(15) forwards,
+  blink 700ms steps(15) infinite;
+}
+@keyframes typerwriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }

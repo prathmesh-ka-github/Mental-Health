@@ -5,7 +5,7 @@ import BackGradients from './components/BackGradients';
 
 function App() {
   return (
-    <div>
+    <div className='back-light transition-all'>
       <NavBar/>
       <Home/>
       <BackGradients/>
