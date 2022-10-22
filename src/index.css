@@ -14,3 +14,35 @@ body {
   background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
   filter: blur(140px);
 }
+
+.type {
+  position: relative;
+}
+.type::before, .type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.type::before {
+  background: white;
+  animation: typerwriter 3s steps(15) forwards;
+}
+.type::after{
+  width: 0.125em;
+  background: #4D77FF;
+  animation: typerwriter 3s steps(15) forwards,
+  blink 700ms steps(15) infinite;
+}
+@keyframes typerwriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
