@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.gradient__blue {
+  background: linear-gradient(90deg, #b9c9ff 0%, #96afff 100%);
+  filter: blur(120px);
+}
+.gradient__pink {
+  background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
+  filter: blur(140px);
+}
