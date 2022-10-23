@@ -3,14 +3,8 @@
 @tailwind utilities;
 body {
   font-family: 'Poppins', sans-serif;
-  width: 100vw;
 }
-
 :root {
-  /*--primary-color: #ffffff;*/
-  /*--secondary-color: #000000;*/
-  /*--main-color: #4D77FF;*/
-  /*--ternary-color: #787878;*/
   --primary-color: #ffffff;
   --secondary-color: #000000;
   --ternary-color-1: #a4a3a3;
@@ -26,7 +20,6 @@ body {
 .opa-light {
   opacity: var(--opacity-secondary);
 }
-
 .txt-main {
   color: var(--main-color);
 }
