@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+}
 
 :root {
   /*--primary-color: #ffffff;*/
@@ -56,14 +60,14 @@
   --ternary-color-1: #747474;
   --main-color: #4D77FF;
   --opacity-secondary: 0.1;
-  --opacity-primary: 0.6;
+  --opacity-primary: 0.5;
 }
 
 body {
   margin: 0;
 }
 .gradient__blue {
-  background: linear-gradient(90deg, #b9c9ff 0%, #96afff 100%);
+  background: linear-gradient(90deg, #b9c9ff 0%, #6a80ff 100%);
   filter: blur(120px);
 }
 .gradient__pink {
@@ -77,6 +81,7 @@ body {
   position: relative;
 }
 .type::before, .type::after {
+  
   content: "";
   position: absolute;
   top: 0;
@@ -87,6 +92,9 @@ body {
 .type::before {
   background:var(--primary-color);
   animation: typerwriter 2.5s steps(15) forwards;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 .type::after{
   width: 0.125em;
