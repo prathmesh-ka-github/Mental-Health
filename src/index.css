@@ -3,7 +3,13 @@
 @tailwind utilities;
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
+
+
+
+
+/*------------------------------------------------------------CSS VARIABLES-------------------------------------------------------*/
 :root {
   --primary-color: #ffffff;
   --secondary-color: #000000;
@@ -12,7 +18,7 @@ body {
   --main-color: #4D77FF;
 
   --opacity-primary: 1;
-  --opacity-secondary: 0.5;
+  --opacity-secondary: 1;
 }
 .opa-dark {
   opacity: var(--opacity-primary);
@@ -46,30 +52,32 @@ body {
   color: var(--ternary-color-2);
 }
 
+
+/*-------------------------------------------DARK THEME----------------------------------------*/
 .dark-theme {
   --secondary-color: #ffffff;
   --primary-color: #161616;
   --ternary-color-2: #a4a3a3;
   --ternary-color-1: #747474;
   --main-color: #4D77FF;
-  --opacity-secondary: 0.1;
+  --opacity-secondary: 0.3;
   --opacity-primary: 0.5;
 }
 
-body {
-  margin: 0;
-}
+/*-----------------------------------------------gradients for the backdrop---------------------------------------------------*/
 .gradient__blue {
-  background: linear-gradient(90deg, #b9c9ff 0%, #6a80ff 100%);
+  background: linear-gradient(45deg, #b9c9ff 0%, #6a80ff 100%);
   filter: blur(120px);
 }
 .gradient__pink {
   background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
   filter: blur(140px);
 }
-.svg {
-  fill: var(--secondary-color);
-}
+
+
+
+
+/*---------------------------------------------------TYPEWRITER EFFECT-------------------------------------------------------*/
 .type {
   position: relative;
 }
@@ -105,3 +113,22 @@ body {
     background: transparent;
   }
 }
+
+/*----------------------------------------------------------CUSTOM SCROLLBAR-------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+
+}
+::-webkit-scrollbar-thumb {
+  background: #4d77ff; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4d77ffdc;
+}
+/*----------------------------------------SCROLL SNAP EFFECT (God bless me if I pulled this off)-----------------------------------------*/

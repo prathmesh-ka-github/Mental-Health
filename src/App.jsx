@@ -5,11 +5,11 @@ import BackGradients from './components/BackGradients';
 
 function App() {
   return (
-    <div className='back-light transition-all'>
+    <div className='-z-10 back-light transition-all'>
       <NavBar/>
       <Home/>
       <BackGradients/>
-      <div id="test-space" className="h-[2000px]"></div>
+      <div id="test-space" className="h-[5000px]"></div>
     </div>
   )
 }
