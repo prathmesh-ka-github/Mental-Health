@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className="mobile:px-10 lg:px-60 lg:text-[26px] w-[100vw] h-[90px] flex text-5xl items-center justify-between font-normal shadow-md fixed z-30 back-light txt-ternary-light">
+    <div className="z-20 mobile:px-10 lg:px-60 lg:text-[26px] w-[100vw] h-[90px] flex text-5xl items-center justify-between font-normal shadow-md fixed back-light txt-ternary-light">
       <div className="cursor-pointer mobile:w-10 lg:w-20 ">
         <img id="logo" src="./assets/icons8-mental-health-64 (1).png" alt="logos" />
       </div>
@@ -18,7 +18,7 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="justify-end items-center sm:hidden">
-        <img alt='hambuger menu' src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png" />
+        <img id="menu" alt='hambuger menu' src="./assets/menu-light.png" />
       </div>
       
     </div>
