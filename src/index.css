@@ -9,7 +9,7 @@ body {
 
 
 
-/*------------------------------------------------------------CSS VARIABLES-------------------------------------------------------*/
+/*------------------------------------------------------------CSS VARIABLES FOR DARK MODE-------------------------------------------------------*/
 :root {
   --primary-color: #ffffff;
   --secondary-color: #000000;
@@ -66,20 +66,36 @@ body {
 
 /*-----------------------------------------------gradients for the backdrop---------------------------------------------------*/
 .gradient__blue {
-  background: linear-gradient(45deg, #b9c9ff 0%, #6a80ff 100%);
+  background: linear-gradient(45deg, #b9c9ff 0%, #4964ff 100%);
   filter: blur(120px);
 }
 .gradient__pink {
   background: linear-gradient(10deg, #ffb9f6 0%, #fd74eb 100%);
   filter: blur(140px);
 }
-
-
-
+/*------------------------------------------------PULSING EFFECTS-------------------------------------------------------------*/
+.gradient__blue {
+  animation: pulse 12s 10s ease infinite;
+}
+.gradient__pink {
+  animation: pulse 20s ease infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /*---------------------------------------------------TYPEWRITER EFFECT-------------------------------------------------------*/
 .type {
   position: relative;
+  
 }
 .type::before, .type::after {
   
@@ -92,7 +108,7 @@ body {
 }
 .type::before {
   background:var(--primary-color);
-  animation: typerwriter 2.5s steps(15) forwards;
+  animation: typerwriter 2s steps(14) 1s forwards;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -100,8 +116,8 @@ body {
 .type::after{
   width: 0.125em;
   background: var(--main-color);
-  animation: typerwriter 2.5s steps(15) forwards,
-  blink 700ms steps(15) infinite;
+  animation: typerwriter 2s steps(14) 1s forwards,
+  blink 700ms steps(14) infinite;
 }
 @keyframes typerwriter {
   to {
@@ -114,7 +130,7 @@ body {
   }
 }
 
-/*----------------------------------------------------------CUSTOM SCROLLBAR-------------------------------------------------------------*/
+/*----------------------------------------------------------CUSTOM SCROLLBAR-----V--------------------------------------------------------*/
 ::-webkit-scrollbar {
   width: 7px;
   background-color: var(--primary-color);
