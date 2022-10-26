@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="flex text-center justify-center items-center flex-col pt-[90px] ">
       
-      <div className='z-10 mb-80 mt-60'>
+      <div className='z-10 mb-80 lg:mt-60 mobile:mt-40'>
         <div className=" font-bold txt-light mobile:text-[40px] lg:text-[64px]">
           Speak out your<span className="txt-main">&nbsp;Feelings</span>
         </div>
