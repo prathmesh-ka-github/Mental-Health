@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className="z-20 mobile:px-10 lg:px-60 lg:text-[26px] w-[100vw] lg:h-[90px] mobile:h-[70px] flex text-5xl items-center justify-between font-normal shadow-md fixed backdrop-blur-xl txt-light">
+    <div className="z-20 mobile:px-10 lg:px-60 lg:text-[26px] lg:h-[80px] mobile:h-[70px] w-[100vw] flex text-5xl items-center justify-between font-normal shadow-md fixed nav-light txt-light">
       <div className="cursor-pointer mobile:w-10 lg:w-20 ">
         <img id="logo" src="./assets/icons8-mental-health-64 (1).png" alt="logos" />
       </div>
