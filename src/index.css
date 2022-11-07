@@ -16,6 +16,9 @@ body {
 
   --opacity-primary: 1;
   --opacity-secondary: 1;
+  
+  --back-brightness: brightness(1);
+  --back-blur: blur(64px);
 }
 
 .opa-dark {
@@ -58,7 +61,16 @@ body {
 .txt-ternary-light {
   color: var(--ternary-color-2);
 }
-/*-------------------------------------------DARK THEME----------------------------------------*/
+
+.nav-dark {
+  backdrop-filter: var(--back-blur) 
+  var(--back-brightness);
+}
+.nav-light {
+  backdrop-filter: var(--back-blur)
+  var(--back-brightness);
+}
+/*-----------------------------------------------------DARK THEME--------------------------------------------------*/
 .dark-theme {
   --secondary-color: #ffffff;
   --primary-color: #070707;
@@ -67,6 +79,9 @@ body {
   --main-color: #4D77FF;
   --opacity-secondary: 0.3;
   --opacity-primary: 0.5;
+
+  --back-brightness: brightness(0.4);
+  --back-blur: blur(64px);
 }
 
 /*-----------------------------------------------gradients for the backdrop---------------------------------------------------*/
@@ -169,12 +184,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4d77ff;
+  background: var(--main-color);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #4d77ffdc;
+  background-color: var(--main-color);
 }
 
 /*----------------------------------------SCROLL SNAP EFFECT (God bless me if I pulled this off)-----------------------------------------*/
