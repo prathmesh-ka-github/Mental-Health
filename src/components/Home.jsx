@@ -11,7 +11,7 @@ const Home = () => {
         <div className="txt-ternary-light lg:text-[20px] mt-5 md:flex-row flex mobile:flex-col mobile:items-center justify-center">
           <div>Connect to a therapist to get your&nbsp;</div><div className="type mobile:w-[179px] w-auto">problems solved...</div>
         </div>
-        <button className="text-white back-main px-[80px] py-[15px] mt-10  rounded-md text-[25px]  hover:bg-blue-400 active:bg-blue-500 transition-all" >
+        <button className="text-white back-main px-[80px] py-[15px] mt-10 rounded-md text-[25px] hover:bg-blue-400 active:bg-blue-500 transition-all" >
           Get Help
         </button>
       </div>
@@ -21,7 +21,6 @@ const Home = () => {
         </div>
         <button className="text-white back-main px-[80px] py-[15px] mt-10 mb-80 rounded-md text-[25px]  hover:bg-blue-400 active:bg-blue-500 transition-all" >View more</button>
       </div>
-
     </div>
   )
 }
