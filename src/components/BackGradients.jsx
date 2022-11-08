@@ -10,7 +10,7 @@ const BackGradients = () => {
         <div className="absolute gradient__pink rounded-full w-[20%] h-[25%] left-[5rem] top-[180rem] "></div>
         <div className="absolute gradient__blue2 rounded-full w-[10%] h-[15%] left-[15rem] top-[190rem] "></div>
         <div className="absolute gradient__pink rounded-full w-[20%] h-[25%] right-[10vw] top-[400vh] "></div>
-
+ 
 
 
 
