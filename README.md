@@ -1,4 +1,6 @@
 # Mental health platform (currently in development)
+<br>
+Now this project uses vite to build, run and develop this webapp!
 <br><br>
 A platform for mental heath help which is created using REACT JS and TailwindCSS
 <br><br>
