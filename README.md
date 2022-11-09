@@ -1,4 +1,6 @@
-# Mental health platform (currently in development)
+## Mental health platform
+# !THIS PROJECT HAS BEEN DISCONTINUED AND WILL NOT RECEIVE ANY FURTHER COMMITS
+# VISIT https://github.com/prathmesh-ka-github/Mental-Health-Platform AS IT IS THE NEXT VERSION OF THIS PLATFORM. It uses VITE. 
 <br>
 Now this project uses vite to build, run and develop this webapp!
 <br><br>
